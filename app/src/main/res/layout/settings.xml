@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/colorDialogGridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:orientation="vertical"
+    android:useDefaultMargins="true" >
+
+    <TextView
+        android:id="@+id/alphaTextView"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:layout_row="0"
+        android:text="@string/label_alpha" />
+
+    <SeekBar
+        android:id="@+id/alphaSeekBar"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/redTextView"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:layout_row="1"
+        android:text="@string/label_red" />
+
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="1"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/greenTextView"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:layout_row="2"
+        android:text="@string/label_green" />
+
+    <SeekBar
+        android:id="@+id/greenSeekBar"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="2"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/blueTextView"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:layout_row="3"
+        android:text="@string/label_blue" />
+
+    <SeekBar
+        android:id="@+id/blueSeekBar"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="3"
+        android:max="255" />
+
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="124dp"
+        android:layout_height="42dp"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="left|center_vertical"
+        android:layout_row="5"
+        android:onClick="onColorBackground"
+        android:text="@string/button_background" />
+
+    <Button
+        android:id="@+id/button_ball_color"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="right|center_vertical"
+        android:layout_row="5"
+        android:onClick="onColorBall"
+        android:text="@string/button_color_ball" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_row="8"
+        android:onClick="onOk"
+        android:text="@string/button_ok" />
+
+    <RadioGroup
+        android:id="@+id/myRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_row="7"
+        android:checkedButton="@+id/radio_a0" >
+
+        <RadioButton
+            android:id="@+id/radio_a0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_a0" />
+
+        <RadioButton
+            android:id="@+id/radio_a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_a1"  />
+
+        <RadioButton
+            android:id="@+id/radio_a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_a2"  />
+
+    </RadioGroup>
+    <TextView android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_column="1" android:layout_gravity="center_horizontal|top" android:layout_marginBottom="10dp" android:layout_row="6" android:text="@string/label_select"/>
+
+</GridLayout>
