@@ -114,7 +114,7 @@ public class BallView extends View implements Commons {
     protected void onDraw(Canvas canvas) {
 
         canvas.drawColor(backgroundColor);
-        if(ball == null) { canvas.drawColor(backgroundColor); } /////
+        if(ball == null) { canvas.drawColor(backgroundColor); } 
         else {
             //ms.draw(canvas);
             if(ball.getxSpeed() > TERM_SPEED) {
@@ -143,6 +143,5 @@ public class BallView extends View implements Commons {
     public void setAudioPlayer(AudioPlayer audioPlayer) {
         collision = audioPlayer;
     }
-
 
 }
