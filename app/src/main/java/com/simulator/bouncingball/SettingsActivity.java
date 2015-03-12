@@ -70,12 +70,10 @@ public class SettingsActivity extends Activity {
         backgroundColor = color;
     }
     public void onOk(View view) {
-
-        //////////
         radioGroup = (RadioGroup) findViewById(R.id.myRadioGroup);
         int selectedId = radioGroup.getCheckedRadioButtonId();
+        
         switch (selectedId) {
-
             case R.id.radio_a0:
                 acceleration = Commons.ACCELERATION;
                 break;
@@ -114,7 +112,7 @@ public class SettingsActivity extends Activity {
                 // display the updated color
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                    if (fromUser) // user, not program, changed SeekBar progress
+                    if (fromUser) // user changed SeekBar
                         color = Color.argb(alphaSeekBar.getProgress(),
                                 redSeekBar.getProgress(), greenSeekBar.getProgress(),
                                 blueSeekBar.getProgress());
