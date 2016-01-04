@@ -106,8 +106,7 @@ public class BallView extends View implements Commons {
     }
 
     private Ball addBall(float x, float y, int color) {
-        Ball ball = new Ball (x, y, DEFAULT_SPEED_X, DEFAULT_SPEED_Y, color);
-        return ball;
+        return new Ball (x, y, DEFAULT_SPEED_X, DEFAULT_SPEED_Y, color);
     }
 
     @Override
